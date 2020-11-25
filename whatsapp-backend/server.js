@@ -21,12 +21,6 @@ const pusher = new Pusher({
 app.use(express.json());
 // everything will accepted for testing purpose
 app.use(cors());
-// or can use:  
-    // app.use((req, res, next) => {
-    //    res.setHeader('Access-Control-Allow-Origin','*');
-    //    res.setHeader('Access-Control-Allow-Headers', '*');
-    //    next();
-    // });
 
 // DB config (MongoDb)
 const connection_url = `mongodb+srv://admin:vhPmqC05Rchn6QqP@cluster0.snwrx.mongodb.net/db?retryWrites=true&w=majority`
